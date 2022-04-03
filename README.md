@@ -10,6 +10,7 @@
 ![2](https://user-images.githubusercontent.com/18647088/161407158-765c73e2-67ae-49e4-bbe8-32b1fea9ab8e.jpg)
 
 ## Modelamiento de dominio
+![3](https://user-images.githubusercontent.com/18647088/161408649-9973463c-4570-4a42-b0a7-0e628d33c31a.png)
 
 
 ## Eventos de dominio
