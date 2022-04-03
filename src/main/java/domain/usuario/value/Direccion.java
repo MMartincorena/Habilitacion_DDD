@@ -1,8 +1,7 @@
 package domain.usuario.value;
 
 import co.com.sofka.domain.generic.ValueObject;
-import domain.generic.dataViewerFranquicia.Calle;
-import domain.generic.dataViewerFranquicia.Numero;
+
 
 import java.util.Objects;
 
