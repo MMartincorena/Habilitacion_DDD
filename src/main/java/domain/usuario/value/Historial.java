@@ -1,4 +1,4 @@
-package domain.entrenador_Personalizado.value;
+package domain.usuario.value;
 
 import co.com.sofka.domain.generic.ValueObject;
 import domain.generic.dataViewerUsuario.FechaInicio;

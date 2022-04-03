@@ -1,7 +1,7 @@
-package domain.entrenador_Personalizado.entity;
+package domain.usuario.entity;
 
 import co.com.sofka.domain.generic.Entity;
-import domain.entrenador_Personalizado.value.*;
+import domain.usuario.value.*;
 
 public class Salud  extends Entity<SaludId> {
 
@@ -20,5 +20,11 @@ private CondicionesMedicas condicionesMedicas;
         return estado;
     }
 
+    public Historial historial() {
+        return historial;
+    }
 
+    public CondicionesMedicas CondicionesMedicas() {
+        return condicionesMedicas;
+    }
 }
