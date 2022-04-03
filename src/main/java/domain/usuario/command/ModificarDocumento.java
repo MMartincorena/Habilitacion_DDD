@@ -2,7 +2,7 @@ package domain.usuario.command;
 
 import co.com.sofka.domain.generic.Command;
 import domain.generic.UsuarioId;
-import domain.usuario.value.Documento;
+import domain.generic.Documento;
 
 public class ModificarDocumento extends Command {
     private final UsuarioId usuarioId;

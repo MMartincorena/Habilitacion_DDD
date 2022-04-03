@@ -1,14 +1,14 @@
-package domain.usuario.event;
+package domain.entrenador_Planta.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
+
 import domain.generic.Nombre;
 
 public class NombreModificado extends DomainEvent {
     private final Nombre nombre;
 
-
     public NombreModificado(Nombre nombre) {
-        super("domain.usuario.nombremodificado");
+        super("domain.entrenadorplanta.nombremodificado");
         this.nombre = nombre;
     }
 

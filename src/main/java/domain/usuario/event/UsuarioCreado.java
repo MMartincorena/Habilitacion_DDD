@@ -1,10 +1,10 @@
 package domain.usuario.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import domain.usuario.value.Direccion;
-import domain.usuario.value.Documento;
+import domain.generic.Direccion;
+import domain.generic.Documento;
 import domain.usuario.value.Estado;
-import domain.usuario.value.Nombre;
+import domain.generic.Nombre;
 
 public class UsuarioCreado extends DomainEvent {
     private final Estado estado;

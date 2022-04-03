@@ -3,10 +3,10 @@ package domain.usuario;
 import co.com.sofka.domain.generic.AggregateEvent;
 import domain.generic.UsuarioId;
 import domain.usuario.event.*;
-import domain.usuario.value.Direccion;
-import domain.usuario.value.Documento;
+import domain.generic.Direccion;
+import domain.generic.Documento;
 import domain.usuario.value.Estado;
-import domain.usuario.value.Nombre;
+import domain.generic.Nombre;
 
 import java.util.Objects;
 

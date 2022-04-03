@@ -2,7 +2,7 @@ package domain.usuario.command;
 
 import co.com.sofka.domain.generic.Command;
 import domain.generic.UsuarioId;
-import domain.usuario.value.Nombre;
+import domain.generic.Nombre;
 
 public class ModificarNombre extends Command {
     private final UsuarioId usuarioId;

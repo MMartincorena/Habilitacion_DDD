@@ -1,16 +1,14 @@
-package domain.usuario.entity;
+package domain.generic;
 
 import co.com.sofka.domain.generic.Entity;
-import domain.usuario.value.Direccion;
 import domain.usuario.value.FranquiciaId;
-import domain.usuario.value.Ciudad;
 
-public class Franquicia extends Entity<FranquiciaId> {
+public class Franquicia_Entity extends Entity<FranquiciaId> {
 
     private Direccion direccion;
     private Ciudad ciudad;
 
-    public Franquicia(FranquiciaId entityId, Direccion direccion, Ciudad ciudad) {
+    public Franquicia_Entity(FranquiciaId entityId, Direccion direccion, Ciudad ciudad) {
         super(entityId);
         this.direccion = direccion;
         this.ciudad = ciudad;

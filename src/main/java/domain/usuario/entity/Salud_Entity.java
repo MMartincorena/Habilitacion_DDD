@@ -6,13 +6,13 @@ import domain.usuario.value.Estado;
 import domain.usuario.value.Historial;
 import domain.usuario.value.SaludId;
 
-public class Salud  extends Entity<SaludId> {
+public class Salud_Entity extends Entity<SaludId> {
 
 private Estado estado;
 private Historial historial;
 private CondicionesMedicas condicionesMedicas;
 
-    public Salud(SaludId saludId, Estado estado, Historial historial, CondicionesMedicas condicionesMedicas) {
+    public Salud_Entity(SaludId saludId, Estado estado, Historial historial, CondicionesMedicas condicionesMedicas) {
         super(saludId);
         this.estado = estado;
         this.historial = historial;

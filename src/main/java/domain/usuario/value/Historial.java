@@ -1,13 +1,20 @@
 package domain.usuario.value;
 
 import co.com.sofka.domain.generic.ValueObject;
-import domain.generic.dataViewerUsuario.FechaInicio;
+
+import java.time.LocalDate;
+import java.util.Objects;
 
 public class Historial implements ValueObject<Historial.Props> {
-    private final FechaInicio fechaInicio;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
 
-    public Historial(FechaInicio fechaInicio) {
-        this.fechaInicio = fechaInicio;
+    public Historial(LocalDate fechaInicio, LocalDate fechaFin) {
+        this.fechaInicio = Objects.requireNonNull(fechaInicio);
+        if(fechaInicio == null){
+            throw new IllegalArgumentException("Debe de existir una fecha de inicio");
+        }
+        this.fechaFin = fechaFin;
     }
 
     @Override
@@ -17,4 +24,7 @@ public class Historial implements ValueObject<Historial.Props> {
 
     public interface Props {
     }
+
+
+
 }

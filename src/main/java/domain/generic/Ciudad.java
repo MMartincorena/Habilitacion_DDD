@@ -1,4 +1,4 @@
-package domain.usuario.value;
+package domain.generic;
 
 import co.com.sofka.domain.generic.ValueObject;
 
