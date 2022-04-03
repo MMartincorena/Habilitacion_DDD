@@ -2,16 +2,8 @@
 # CHALLENGE - Haciendo DDD desde cero
 
 ### Desafío el cual será plasmado la lógica de gimnasio.
+![](../../Taller DDD/1.png)
 
+![](../../Taller DDD/2.jpg)
 
-## Modelo Estratégico
-
-
-## Core Domain
-
-
-## Modelamiento de dominio
-
-
-
-## Eventos de dominio
+![](../../Taller DDD/4.jpg)
