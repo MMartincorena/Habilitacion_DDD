@@ -12,15 +12,13 @@ public class CrearE_Planta extends Command {
     private final Documento documento;
     private final Direccion direccion;
     private final Salario salario;
-    private final Set<Horario> horarios;
 
-    public CrearE_Planta(Entrenador_PlantaId entrenador_plantaId, Nombre nombre, Documento documento, Direccion direccion, Salario salario, Set<Horario> horarios) {
+    public CrearE_Planta(Entrenador_PlantaId entrenador_plantaId, Nombre nombre, Documento documento, Direccion direccion, Salario salario) {
         this.entrenador_plantaId = entrenador_plantaId;
         this.nombre = nombre;
         this.documento = documento;
         this.direccion = direccion;
         this.salario = salario;
-        this.horarios = horarios;
     }
 
     public Entrenador_PlantaId getEntrenador_plantaId() {
@@ -43,7 +41,6 @@ public class CrearE_Planta extends Command {
         return salario;
     }
 
-    public Set<Horario> getHorarios() {
-        return horarios;
-    }
+
+
 }

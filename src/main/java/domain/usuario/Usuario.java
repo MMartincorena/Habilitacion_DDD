@@ -33,12 +33,11 @@ public class Usuario extends AggregateEvent<UsuarioId> {
         subscribe(new UsuarioChange(this));
     }
 
-    // CREAR Usuario 7// Revisar
+    // CREAR Usuario
     public Usuario(UsuarioId usuarioId, Estado estado, Nombre nombre, Direccion direccion, Documento documento) {
         super(usuarioId);
         appendChange(new UsuarioCreado(estado, nombre, direccion, documento)).apply();
     }
-
 
 
     // MODIFICAR documento
