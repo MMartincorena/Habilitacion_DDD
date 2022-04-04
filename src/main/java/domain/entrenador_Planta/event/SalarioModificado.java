@@ -1,7 +1,7 @@
 package domain.entrenador_Planta.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import domain.entrenador_Planta.Salario;
+import domain.entrenador_Planta.value.Salario;
 
 public class SalarioModificado extends DomainEvent {
     private final Salario salario;

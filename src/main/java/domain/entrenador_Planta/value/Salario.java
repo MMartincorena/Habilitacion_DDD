@@ -1,4 +1,4 @@
-package domain.entrenador_Planta;
+package domain.entrenador_Planta.value;
 
 import co.com.sofka.domain.generic.ValueObject;
 

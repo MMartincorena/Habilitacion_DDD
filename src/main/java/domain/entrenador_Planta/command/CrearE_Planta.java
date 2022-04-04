@@ -1,7 +1,7 @@
 package domain.entrenador_Planta.command;
 
 import co.com.sofka.domain.generic.Command;
-import domain.entrenador_Planta.Salario;
+import domain.entrenador_Planta.value.Salario;
 import domain.generic.*;
 
 import java.util.Set;
