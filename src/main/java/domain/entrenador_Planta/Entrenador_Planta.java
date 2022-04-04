@@ -2,15 +2,19 @@ package domain.entrenador_Planta;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import domain.entrenador_Personalizado.event.E_PersonalizadoEliminado;
 import domain.entrenador_Planta.event.E_PlantaCreado;
+import domain.entrenador_Planta.event.E_PlantaEliminado;
 import domain.entrenador_Planta.value.Salario;
 import domain.generic.*;
 import domain.usuario.event.DocumentoModificado;
 import domain.usuario.event.NombreModificado;
+import domain.usuario.event.UsuarioEliminado;
 
 
 import javax.print.Doc;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 public class Entrenador_Planta extends AggregateEvent<Entrenador_PlantaId> {
@@ -39,7 +43,11 @@ public class Entrenador_Planta extends AggregateEvent<Entrenador_PlantaId> {
         appendChange(new E_PlantaCreado(nombre, documento, direccion, salario, horarios)).apply();
     }
 
-
+    // ELIMINAR Entrenador_Planta
+    public void eliminarE_Planta(Entrenador_PlantaId entrenador_plantaId){
+        Objects.requireNonNull(entrenador_plantaId);
+        appendChange(new E_PlantaEliminado(entrenador_plantaId)).apply();
+    }
 
 
 
@@ -71,4 +79,6 @@ public class Entrenador_Planta extends AggregateEvent<Entrenador_PlantaId> {
     public void modificarDocumento(Documento documento) {
         appendChange(new DocumentoModificado(documento)).apply();
     }
+
+
 }

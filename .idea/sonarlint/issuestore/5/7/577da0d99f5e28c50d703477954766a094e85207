@@ -1,0 +1,15 @@
+
+`
+java:S1128"KRemove this unused import 'domain.entrenador_Personalizado.value.Comision'.(™½Íf
+P
+java:S1128"5Remove this unused import 'domain.generic.Direccion'.( ÁÞËýÿÿÿÿ
+K
+java:S1128"5Remove this unused import 'domain.generic.Documento'.(×‚þÝ
+I
+java:S1128"3Remove this unused import 'domain.generic.Horario'.(Ÿ¿ìç
+H
+java:S1128	"2Remove this unused import 'domain.generic.Nombre'.(Û§ÌÞ
+E
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤þÿÿÿÿ
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Žˆõ=
+a	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(›…áx
