@@ -3,7 +3,7 @@ package domain.generic;
 import co.com.sofka.domain.generic.ValueObject;
 import domain.usuario.value.Plan;
 
-public class Documento implements ValueObject<Plan.Props> {
+public class Documento implements ValueObject<Documento.Props> {
     private final String tipo;
     private final int numero;
 
@@ -13,7 +13,7 @@ public class Documento implements ValueObject<Plan.Props> {
     }
 
     @Override
-    public Plan.Props value() {
+    public Documento.Props value() {
         return null;
     }
 

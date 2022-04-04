@@ -24,6 +24,6 @@ public class Nombre  implements ValueObject<Nombre.Props> {
         return null;
     }
 
-    public class Props {
+    public interface Props {
     }
 }

@@ -12,7 +12,7 @@ public class Plan_Entity extends Entity<PlantaId> {
     private TipoPlan tipoPlan;
     private Horario horario;
     private Caracteristicas caracteristicas;
-    private Set<Entrenador> entrenadores;
+    //private Set<Entrenador> entrenadores;
 
 
     public Plan_Entity(PlantaId entityId) {

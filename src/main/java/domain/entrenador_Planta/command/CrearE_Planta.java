@@ -7,7 +7,7 @@ import domain.generic.*;
 import java.util.Set;
 
 public class CrearE_Planta extends Command {
-    private Entrenador_PlantaId entrenador_plantaId;
+    private final Entrenador_PlantaId entrenador_plantaId;
     private final Nombre nombre;
     private final Documento documento;
     private final Direccion direccion;

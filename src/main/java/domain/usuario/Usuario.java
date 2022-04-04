@@ -1,6 +1,7 @@
 package domain.usuario;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import domain.generic.UsuarioId;
 import domain.usuario.event.*;
 import domain.generic.Direccion;
@@ -8,6 +9,7 @@ import domain.generic.Documento;
 import domain.usuario.value.Estado;
 import domain.generic.Nombre;
 
+import java.util.List;
 import java.util.Objects;
 
 
@@ -18,11 +20,26 @@ public class Usuario extends AggregateEvent<UsuarioId> {
     protected Documento documento;
 
 
-    // CREAR Usuario
-    public Usuario(UsuarioId usuarioId) {
+
+
+    public static Usuario from(UsuarioId usuarioId, List<DomainEvent> events){
+        var usuario = new Usuario(usuarioId);
+        events.forEach(usuario::applyEvent);
+        return usuario;
+    }
+
+    private Usuario(UsuarioId usuarioId){
+        super(usuarioId);
+        subscribe(new UsuarioChange(this));
+    }
+
+    // CREAR Usuario 7// Revisar
+    public Usuario(UsuarioId usuarioId, Estado estado, Nombre nombre, Direccion direccion, Documento documento) {
         super(usuarioId);
         appendChange(new UsuarioCreado(estado, nombre, direccion, documento)).apply();
     }
+
+
 
     // MODIFICAR documento
       public void modificarDocumento(UsuarioId usuarioId, Documento documento){
@@ -68,4 +85,7 @@ public class Usuario extends AggregateEvent<UsuarioId> {
         return documento;
     }
 
+    public void modificarNombre(Nombre nombre) {
+        appendChange(new NombreModificado(nombre)).apply();
+    }
 }

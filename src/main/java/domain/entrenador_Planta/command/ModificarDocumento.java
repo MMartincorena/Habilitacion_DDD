@@ -6,7 +6,6 @@ import domain.generic.Entrenador_PlantaId;
 
 public class ModificarDocumento extends Command {
     private final Entrenador_PlantaId entrenador_plantaId;
-
     private final Documento documento;
 
     public ModificarDocumento(Entrenador_PlantaId entrenador_plantaId, Documento documento) {
